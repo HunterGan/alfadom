@@ -40,6 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             sx={{
               flexGrow: 1,
               bgcolor: 'background.default',
+              maxWidth: 1360,
+              width: '100%',
               ml: `${DRAWER_WIDTH}px`,
               mt: ['48px', '56px', '64px'],
               p: 3,
