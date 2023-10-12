@@ -2,7 +2,14 @@ import { Box } from "@mui/material"
 
 const Header = () => {
   return (
-    <Box>Header</Box>
+    <Box
+      sx={{
+        background: {
+          md: 'black',
+          lg: 'red'
+        }
+      }}
+    >Header</Box>
   )
 }
 

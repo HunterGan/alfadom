@@ -34,22 +34,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <ThemeRegistry>
-          <Header/>
           <Box
-            component="main"
             sx={{
-              flexGrow: 1,
-              bgcolor: 'background.default',
-              maxWidth: 1360,
+              display: 'flex',
+              flexDirection: 'column',
+              minHeight: '100vh',
               width: '100%',
-              ml: `${DRAWER_WIDTH}px`,
-              mt: ['48px', '56px', '64px'],
-              p: 3,
+              
             }}
           >
-            {children}
+            <Header/>
+            <Box
+              component="main"
+              sx={{
+                flexGrow: 1,
+                bgcolor: '#eaea',
+                width: '100%',
+                ml: `${DRAWER_WIDTH}px`,
+                mt: ['48px', '56px', '64px'],
+                p: 3,
+              }}
+            >
+              {children}
+            </Box>
+            <Footer/>
           </Box>
-          <Footer/>
         </ThemeRegistry>
       </body>
     </html>

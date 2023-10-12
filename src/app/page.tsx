@@ -44,7 +44,7 @@ export default function HomePage() {
           </Grid>
         </Grid>
       </div>
-      <Drawer
+      {/* <Drawer
         sx={{
           width: 320,
           flexShrink: 0,
@@ -66,7 +66,7 @@ export default function HomePage() {
             </Typography>
           </ListItem>
         </List>
-      </Drawer>
+      </Drawer> */}
     </Box>
   );
 }
