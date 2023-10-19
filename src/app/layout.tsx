@@ -3,8 +3,8 @@ import Link from 'next/link';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import ThemeRegistry from '@/shared/config/theme/ThemeRegistry';
-import Header from '@/shared/ui/common/Header';
-import Footer from '@/shared/ui/common/Footer';
+import Header from '@/shared/ui/common/layouts/Header';
+import Footer from '@/shared/ui/common/layouts/Footer';
 
 export const metadata = {
   title: 'Next.js App Router + Material UI v5',
