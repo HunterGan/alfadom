@@ -12,7 +12,6 @@ const Content:FC<IContent> = ({children}) => (
       display: 'flex',
       flexWrap: 'wrap',
       width: '100%',
-      border: '0.5px solid red',
       maxWidth: {
         xl: 1524,
       },
