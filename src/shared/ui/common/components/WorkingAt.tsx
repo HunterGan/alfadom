@@ -20,10 +20,7 @@ const WorkingAt = () => {
       >
         <Icon/>
         <Typography sx={{fontSize: '18px',color: '#FFF'}}>
-          From
-          <Typography sx={{color: theme.textAccent, display: 'inline'}}> morning </Typography>
-          to
-          <Typography sx={{color: theme.textAccent, display: 'inline'}}> evening</Typography>
+          From morning to evening
         </Typography>
       </Box>
     </Box>
