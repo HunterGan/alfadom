@@ -7,7 +7,6 @@ interface IContent {
 
 const Content:FC<IContent> = ({children}) => (
   <Box
-    id="content"
     sx={{
       display: 'flex',
       flexWrap: 'wrap',
