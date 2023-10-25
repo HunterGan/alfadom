@@ -9,6 +9,7 @@ import Content from "@/shared/ui/common/layouts/Content"
 import Address from '@/shared/ui/common/components/Address'
 import LinksBox from '@/shared/ui/common/components/LinksBox'
 import WorkingAt from '@/shared/ui/common/components/WorkingAt'
+import { mainLinks, projectLinks, articleLinks, legalLinks } from "@/shared/consts/mainLinks"
 
 const darkTheme = {
   background: '#1F1F1F',
@@ -93,34 +94,6 @@ const Footer = () => {
       </Content>
     </Box>
   )
-}
-
-const mainLinks = {
-  works: 'Works',
-  about: 'About',
-  deadline: 'Deadline',
-  contacs: 'Contacts',
-}
-
-const projectLinks = {
-  project1: 'Project1',
-  project2: 'Project2',
-  project3: 'Project3',
-  project4: 'Project4',
-}
-
-const articleLinks = {
-  article1: 'Article1',
-  article2: 'Article2',
-  article3: 'Article3',
-  article4: 'Article4',
-}
-
-const legalLinks = {
-  privacy: 'Privacy policy',
-  offer: 'Offer',
-  guarantee: 'Guarantee',
-  payment: 'Payment',
 }
 
 export default Footer

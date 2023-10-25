@@ -1,8 +1,9 @@
-import { Box, Button, Grid} from "@mui/material"
+import { Box, Button, Grid, Typography} from "@mui/material"
 import Logo from '@/shared/ui/common/components/Logo'
 import Content from "@/shared/ui/common/layouts/Content"
 import Address from '@/shared/ui/common/components/Address'
 import WorkingAt from '@/shared/ui/common/components/WorkingAt'
+import { mainLinks, projectLinks, articleLinks, legalLinks } from "@/shared/consts/mainLinks"
 
 const darkTheme = {
   background: '#1F1F1F',
@@ -24,6 +25,7 @@ const Header = () => {
       }}
     >
     <Content>
+      {/* Main Header */}
       <Grid
         container
         spacing={2}
@@ -50,8 +52,38 @@ const Header = () => {
           </Button>
         </Grid>
       </Grid>
+
+      {/* Sub Header - Links*/}
+      <Grid
+        container
+        spacing={2}
+      >
+        {['Main Links', 'Project Links', 'Articles Links', 'LegalLinks']
+            .map((x) => (
+              <Grid item xs={3} key={x}>
+                <LinkDropdown title={x}/>
+              </Grid>
+            ))
+        }
+      </Grid>
     </Content>
   </Box>
+  )
+}
+
+const LinkDropdown = ({title}: {title: string}) => {
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        color: 'white',
+        fontWeight: 600,
+        opacity: 1,
+        fontSize: 17,
+      }}
+    >
+      <Typography>{title}</Typography>
+    </Box>
   )
 }
 
